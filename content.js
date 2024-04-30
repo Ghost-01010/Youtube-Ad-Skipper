@@ -3,7 +3,7 @@ function checkForAds() {
   let video = document.getElementsByClassName("video-stream html5-main-video")[0];
 
   if (adExist && video) {
-    video.playbackRate = 9.5;
+    video.playbackRate = 12.5;
   }
 
   let skipButton = document.getElementsByClassName("ytp-ad-skip-button-modern ytp-button")[0]
@@ -16,4 +16,4 @@ function checkForAds() {
   }
 }
 
-setInterval(checkForAds, 400);
+setInterval(checkForAds, 300);

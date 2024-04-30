@@ -4,7 +4,7 @@
   "version": "1.01",
   "description": "Skips YouTube ads.",
   "permissions": ["storage", "activeTab","scripting"],
-  "host_permissions": ["*://www.youtube.com/*"],
+  "host_permissions": ["*://www.youtube.com/watch?v*", "*://www.music.youtube.com/watch?v*"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -18,7 +18,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://www.youtube.com/*"],
+      "matches": ["*://www.youtube.com/watch?v*", "*://www.music.youtube.com/watch?v*"],
       "js": ["content.js"]
     }
   ],
